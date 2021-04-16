@@ -1,22 +1,24 @@
 import Layout from '../../components/layout'
 import Navbar from '../../components/navbar'
 import MovieCards from '../../components/movieCards'
-import CardGroup from 'react-bootstrap/CardGroup'
+import Row from 'react-bootstrap/Row'
+import Container from 'react-bootstrap/Container'
 
 
 export default function movieLandingPage({movieData}){
     return (
         <>
             <Navbar/>
-            <Layout>
-            <CardGroup>
-                {movieData.map((movieDetails)=>{
-                    return (
-                        <MovieCards movieDetails={movieDetails}/>
-                    )
-                })}    
-            </CardGroup>    
-            </Layout>
+            <p></p>
+            <Container>
+                <Row>
+                    {movieData.map((movieDetails)=>{
+                        return (
+                            <MovieCards movieDetails={movieDetails}/>
+                        )
+                    })}    
+                </Row>
+            </Container>    
             
         </>
     )

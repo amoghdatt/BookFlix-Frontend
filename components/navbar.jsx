@@ -9,8 +9,8 @@ export default function navbar(){
             <Navbar.Brand href="#home">BookFlix</Navbar.Brand>
                 <Nav className="mr-auto">
                     <Link href='/movie'><Nav.Link href="#home">Home</Nav.Link></Link>
-                    <Nav.Link href="#features">Movies</Nav.Link>
-                    <Nav.Link href="#pricing">Releasing Soon!</Nav.Link>
+                    <Nav.Link href="#">Movies</Nav.Link>
+                    <Nav.Link href="#newReleases">Releasing Soon!</Nav.Link>
                 </Nav>
         </Navbar>
     )

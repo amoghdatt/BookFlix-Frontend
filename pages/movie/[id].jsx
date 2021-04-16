@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button'
 import Image from 'react-bootstrap/Image'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../../components/navbar'
+import Layout from '../../components/layout'
 
 
 export default function displayMovie({movieData}){
@@ -26,11 +27,13 @@ export default function displayMovie({movieData}){
         </Row>
         </Container>
         <hr/>
+        <Layout>
         <Container>
            <p>{movieData.synopsis}</p>
            <p>Duration: {movieData.duration} mins</p> 
             <Button variant="success" size="sm" block> BOOK NOW</Button>
         </Container>
+        </Layout>
         </>
     )
 }
